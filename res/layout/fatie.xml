@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2dd0e3" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/forum_activity_1_1"
+            android:contentDescription="@null" />
+
+        <Button
+            android:id="@+id/forum_activity_1_1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/global_1_1_menu" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/viewthread_1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fatie_subject"
+        android:layout_alignBottom="@+id/fatie_subject"
+        android:layout_marginLeft="10dp"
+        android:text="主题："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/fatie_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewthread_1_1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/reply_activity_shape_1_1"
+        android:hint="标题"
+        android:textColor="#d7d1d1"
+        android:inputType="text"
+        android:padding="7dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/fatie_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fatie_subject"
+        android:layout_alignRight="@+id/fatie_subject"
+        android:layout_below="@+id/fatie_subject"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/reply_activity_shape_1_1"
+        android:padding="7dp"
+        android:textColor="#d7d1d1"
+        tools:listitem="@android:layout/simple_spinner_item" />
+
+    <EditText
+        android:id="@+id/fatie_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sure"
+        android:layout_alignLeft="@+id/fatie_type"
+        android:layout_below="@+id/fatie_type"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/reply_activity_shape_1_1"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textColor="#000000"
+        android:background="@drawable/reply_activity_1_1"
+        android:padding="14dp"
+        android:text="@string/sure" />
+
+</RelativeLayout>

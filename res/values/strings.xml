@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">青春无名</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello">Hello</string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">请输入密码</string>
+    <string name="login_question">安全提问(未设置请忽略)</string>
+    <string name="login_answer">请输入安全提问答案</string>
+    <string name="login_checkbox_remember">记住密码</string>
+    <string name="forum_item_zhuti">主题：</string>
+    <string name="forum_item_tieshu">. 帖数：</string>
+    <string name="viewthreads_huifu">回复</string>
+    <string name="viewthreads_liulan">浏览</string>
+    <string name="titilebar_return">返回</string>
+    <string name="forum_item_look">查看帖子</string>
+    <string name="load_more">加载更多</string>
+    <string name="update">刷新</string>
+    <string name="btn_replies">回复</string>
+    <string name="starting_decoration">启动画面</string>
+    <string name="_head">头像</string>
+    <string name="sure">发布主题</string>
+    <string name="remember_pass">记住密码</string>
+    <string name="thread_activity_1_1">回复</string>
+    <string name="thread_activity_1_2">引用</string>
+    <string name="reply_activity_string_1_1">参与/发表回复</string>
+    
+
+</resources>

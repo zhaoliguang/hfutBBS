@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="10dp" >
+
+	<ImageView 
+	    android:id="@+id/imageView1" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignLeft="@+id/thread_subject" 
+	    android:layout_below="@+id/thread_subject" 
+	    android:layout_marginTop="14dp" 
+	    android:src="@drawable/noavatar_small" 
+	    android:contentDescription="@string/_head"/>
+	<TextView 
+	    android:id="@+id/thread_author" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignTop="@+id/imageView1" 
+	    android:layout_marginLeft="17dp" 
+	    android:layout_toRightOf="@+id/imageView1" 
+	    android:textSize="15sp"/>
+
+	<TextView 
+		android:id="@+id/thread_message" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_alignLeft="@+id/imageView1" 
+		android:layout_alignParentRight="true" 
+		android:layout_below="@+id/imageView1" 
+		android:layout_marginTop="16dp" 
+		android:background="#F7F6F6" 
+		android:padding="10dp"  
+		android:textSize="14sp"/> 
+
+	
+	<!--
+	<WebView
+	    android:id="@+id/thread_message"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/imageView1"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/imageView1"
+	    android:layout_marginTop="16dp"
+	    android:background="#F7F6F6"
+	    android:padding="10dp"
+	    android:textSize="14sp" />
+	-->
+
+	<TextView
+	    android:id="@+id/thread_subject"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:gravity="center"
+	    android:textSize="22sp" />
+
+	<TextView android:id="@+id/thread_dateline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/imageView1" android:layout_alignLeft="@+id/thread_author"  android:textSize="13sp"/>
+
+</RelativeLayout>

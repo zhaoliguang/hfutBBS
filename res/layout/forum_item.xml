@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#e5e5e5" >
+
+    <TextView
+        android:id="@+id/forum_item_1_1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/forum_item_1_2_todaypost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/forum_item_1_1_name"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/forum_item_1_1_name"
+        android:textColor="#f94f00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/forum_item_1_3_replies_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/forum_item_1_1_name"
+        android:layout_below="@+id/forum_item_1_1_name"
+        android:layout_marginTop="10dp"
+        android:text="@string/forum_item_zhuti"
+        style="@style/forum_item_child" />
+
+    <TextView
+        android:id="@+id/forum_item_1_4_replies_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/forum_item_1_3_replies_content"
+        android:layout_alignBottom="@+id/forum_item_1_3_replies_content"
+        android:layout_toRightOf="@+id/forum_item_1_3_replies_content"
+        style="@style/forum_item_child" />
+
+    <TextView
+        android:id="@+id/forum_item_1_5_forum_posts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/forum_item_1_6_textView2"
+        android:layout_alignBottom="@+id/forum_item_1_6_textView2"
+        android:layout_toRightOf="@+id/forum_item_1_6_textView2"
+        style="@style/forum_item_child" />
+
+    <TextView
+        android:id="@+id/forum_item_1_6_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/forum_item_1_4_replies_author"
+        android:layout_alignBottom="@+id/forum_item_1_4_replies_author"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/forum_item_1_4_replies_author"
+        android:text="@string/forum_item_tieshu"
+        style="@style/forum_item_child" />
+
+</RelativeLayout>
